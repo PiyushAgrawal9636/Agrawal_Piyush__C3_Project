@@ -62,5 +62,10 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
+    //<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL DISPLAYED>>>>>>>>>>>>>>>>
+    @Test
+    public void adding_item_to_order_should_increase_order_size_by_1() {}
+    @Test
+    public void adding_Two_items_to_order_list_then_finding_the_total_of_the_order() {}
+    //<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL DISPLAYED>>>>>>>>>>>>>>>>
 }
