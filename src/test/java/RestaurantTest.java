@@ -64,8 +64,17 @@ class RestaurantTest {
 
     //<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL DISPLAYED>>>>>>>>>>>>>>>>
     @Test
-    public void adding_item_to_order_should_increase_order_size_by_1() {}
+    public void adding_item_to_order_should_increase_order_size_by_1() {
+        int initialOrderSize = restaurant.getOrder().size();
+        restaurant.addToOrder("Sweet corn soup");
+        assertEquals(initialOrderSize+1,restaurant.getOrder().size());
+    }
     @Test
-    public void adding_Two_items_to_order_list_then_finding_the_total_of_the_order() {}
+    public void adding_Two_items_to_order_list_then_finding_the_total_of_the_order() {
+        restaurant.addToOrder("Sweet corn soup");
+        restaurant.addToOrder("Vegetable lasagne");
+        int total_of_order = restaurant.totalOfOrder();
+        assertEquals(388,total_of_order);
+    }
     //<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL DISPLAYED>>>>>>>>>>>>>>>>
 }
